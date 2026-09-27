@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prospecção ativa via WhatsApp — guia da pesquisa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F5F3ED; --ink:#1B1F1D; --ink-soft:#4A4F49;
+    --teal:#1F4B43; --gold:#B4842A; --line:#DAD5C7;
+    --card:#FFFFFF;
+    padding-top: env(safe-area-inset-top,0px);
+    padding-bottom: env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#15201C; --ink:#EDECE6; --ink-soft:#B7BEB6;
+      --teal:#7FC2AE; --gold:#E0B15C; --line:#2B3833; --card:#1C2A25;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#15201C; --ink:#EDECE6; --ink-soft:#B7BEB6;
+    --teal:#7FC2AE; --gold:#E0B15C; --line:#2B3833; --card:#1C2A25;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-padding-top: env(safe-area-inset-top,0px);}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:'Source Sans 3', system-ui, sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:700px; margin:0 auto; padding:64px 24px 96px;}
+  header.hero{margin-bottom:56px;}
+  .kicker{color:var(--teal); font-weight:700; font-size:0.95rem; margin:0 0 14px;}
+  h1{
+    font-family:'Fraunces', serif; font-weight:600; font-size:clamp(2.1rem,5vw,3rem);
+    line-height:1.08; margin:0 0 20px; letter-spacing:-0.01em;
+  }
+  .lede{font-size:1.15rem; color:var(--ink-soft); max-width:56ch; margin:0;}
+  h2{
+    font-family:'Fraunces', serif; font-weight:600; font-size:1.5rem;
+    margin:0 0 14px; letter-spacing:-0.005em;
+  }
+  section{margin-bottom:52px;}
+  p{margin:0 0 16px; max-width:68ch;}
+  .callout{
+    background:var(--card); border:1px solid var(--line); border-radius:6px;
+    padding:20px 22px; margin:0 0 16px;
+  }
+  .callout p{margin:0; max-width:none;}
+  .callout .label{color:var(--gold); font-weight:700; font-size:0.85rem; display:block; margin-bottom:8px;}
+  .msg{
+    font-family:'Source Sans 3', sans-serif; background:var(--card); border-left:3px solid var(--teal);
+    border-radius:2px; padding:14px 18px; margin:12px 0 0; color:var(--ink);
+    font-style:italic;
+  }
+  ol.steps{list-style:none; margin:0; padding:0; counter-reset:step;}
+  ol.steps > li{
+    counter-increment:step; position:relative; padding:0 0 40px 56px; border-left:1px solid var(--line);
+    margin-left:19px;
+  }
+  ol.steps > li:last-child{border-left-color:transparent; padding-bottom:0;}
+  ol.steps > li::before{
+    content:counter(step);
+    position:absolute; left:-20px; top:0; width:39px; height:39px;
+    background:var(--teal); color:var(--bg); border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Fraunces', serif; font-weight:600; font-size:1.05rem;
+  }
+  ol.steps h3{
+    font-family:'Source Sans 3', sans-serif; font-weight:700; font-size:1.15rem;
+    margin:2px 0 8px; color:var(--ink);
+  }
+  ol.steps p{margin:0; color:var(--ink-soft); max-width:60ch;}
+  .tips{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:24px 26px;}
+  .tips h2{margin-bottom:16px;}
+  .tips ul{margin:0; padding-left:20px;}
+  .tips li{margin-bottom:12px; max-width:64ch;}
+  .tips li:last-child{margin-bottom:0;}
+  footer{border-top:1px solid var(--line); margin-top:56px; padding-top:24px; color:var(--ink-soft); font-size:0.95rem;}
+  strong{color:var(--ink);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <p class="kicker">Guia de prospecção ativa</p>
+    <h1>Vender sistema sob medida sem esperar o cliente bater na porta</h1>
+    <p class="lede">Como usar uma "pesquisa" curta no WhatsApp para abrir conversa com donos de e-commerce, descobrir a dor deles e chegar numa apresentação — sem parecer spam.</p>
+  </header>
+
+  <section>
+    <h2>A ideia por trás</h2>
+    <p>A maioria das empresas espera o cliente aparecer: um anúncio, um post, uma indicação — e só vende quem já estava procurando. Isso é <strong>venda passiva</strong>: você fica refém de quem decide te procurar.</p>
+    <p><strong>Venda ativa</strong> é o oposto: você vai até quem tem o problema, mesmo que essa pessoa ainda não tenha percebido que precisa de uma solução. A "pesquisa" é a ferramenta que torna essa abordagem possível sem soar invasiva — porque pedir 2 minutos para responder algumas perguntas é muito mais fácil de aceitar do que ouvir um pitch de vendas direto.</p>
+    <div class="callout">
+      <span class="label">Por que funciona</span>
+      <p>A pesquisa faz a própria pessoa perceber o problema dela ao responder às perguntas — ninguém precisa convencer ninguém de nada. A venda nasce da conversa, não de um discurso pronto.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>O passo a passo</h2>
+    <ol class="steps">
+      <li>
+        <h3>Monte a lista de contatos</h3>
+        <p>Busque e-commerces de Franca no Instagram, Google Maps e em plataformas como Irroba, Nuvemshop ou Loja Integrada — elas costumam listar lojas ativas na região. Anote o WhatsApp comercial de cada uma.</p>
+      </li>
+      <li>
+        <h3>Abra com a pesquisa, nunca com a venda</h3>
+        <p>Mande uma mensagem curta pedindo poucos minutos para responder a um levantamento sobre gestão de e-commerce na região. Nada de mencionar o sistema ainda.</p>
+        <div class="msg">"Oi [nome], tudo bem? Estou fazendo um levantamento rápido com lojas online de Franca sobre como estão gerenciando pedidos e checkout. Posso te fazer 3 perguntas por aqui?"</div>
+      </li>
+      <li>
+        <h3>Faça perguntas que revelam a dor</h3>
+        <p>As perguntas certas fazem a pessoa perceber sozinha onde o sistema atual falha — sem você precisar apontar nada.</p>
+        <div class="msg">"Hoje vocês usam algum sistema integrado pra pedidos ou é tudo manual?"<br>"Já perderam venda por carrinho abandonado ou checkout travando?"<br>"Se pudesse automatizar uma parte da operação hoje, qual seria?"</div>
+      </li>
+      <li>
+        <h3>Feche a pesquisa com uma ponte natural</h3>
+        <p>Depois das respostas, agradeça e conecte o problema relatado à sua solução — como consequência lógica da conversa, não como uma oferta forçada.</p>
+        <div class="msg">"Faz muito sentido, isso é bem comum aqui na região. Inclusive é exatamente esse tipo de problema que eu ajudo a resolver — desenvolvo sistemas sob medida pra loja de e-commerce. Faz sentido eu te mostrar rapidinho o que já fiz pra outras lojas daqui?"</div>
+      </li>
+      <li>
+        <h3>Agende, não deixe em aberto</h3>
+        <p>Não espere a pessoa "chamar depois". Ofereça um horário fixo — uma call de 15 minutos ou uma visita presencial — já levando algo concreto para mostrar: print, demonstração ou case de outra loja.</p>
+      </li>
+      <li>
+        <h3>Peça indicação mesmo quando a resposta é não</h3>
+        <p>Se a pessoa não tiver interesse agora, pergunte se conhece outro dono de e-commerce na região com o mesmo tipo de problema. Isso mantém a prospecção rodando a custo zero.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="tips">
+    <h2>Cuidados no WhatsApp</h2>
+    <ul>
+      <li><strong>Use WhatsApp Business</strong>, com foto e descrição da empresa preenchidas — isso reduz a desconfiança de golpe logo na primeira mensagem.</li>
+      <li><strong>Personalize cada abertura</strong> com o nome da loja ou do dono. Mensagens idênticas disparadas em sequência para muitos números tendem a ser marcadas como spam.</li>
+      <li><strong>Cadencie o follow-up.</strong> Se não houver resposta em 1 ou 2 dias, uma mensagem leve de retomada costuma reativar boa parte dos contatos parados.</li>
+      <li><strong>Registre cada lead</strong> — quem respondeu, em que etapa está, quem virou reunião — para não perder o fio da meada conforme a lista cresce.</li>
+    </ul>
+  </section>
+
+  <footer>
+    Baseado na lógica de venda ativa e geração de leads a custo zero através de pesquisa.
+  </footer>
+
+</div>
+</body>
+</html>
